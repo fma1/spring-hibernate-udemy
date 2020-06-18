@@ -10,7 +10,7 @@ class AnnotationDemoApp {
 
 object AnnotationDemoApp extends App {
   val context = SpringApplication.run(classOf[AnnotationDemoApp], args:_*)
-  val theCoach = context.getBean("thatSillyCoach", classOf[Coach])
+  val theCoach = context.getBean("tennisCoach", classOf[Coach])
 
   println(theCoach.getDailyWorkout)
 
