@@ -13,6 +13,7 @@ object AnnotationDemoApp extends App {
   val theCoach = context.getBean("tennisCoach", classOf[Coach])
 
   println(theCoach.getDailyWorkout)
+  println(theCoach.getDailyFortune)
 
   context.close()
 }
