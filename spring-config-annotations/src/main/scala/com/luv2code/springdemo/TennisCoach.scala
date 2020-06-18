@@ -3,8 +3,22 @@ package com.luv2code.springdemo
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 
+// This annotation auto-generates getters/setters for Spring Beans to Scala's getters/setters
+// import scala.beans.BeanProperty
+
 @Component
-class TennisCoach(@Autowired fortuneService: FortuneService) extends Coach {
+class TennisCoach extends Coach {
+  println(">> TennisCoach: inside default constructor")
+
+  // @BeanProperty
+  var fortuneService: FortuneService = _
+
+  @Autowired
+  def setFortuneService(fortuneService: FortuneService): Unit = {
+    println(">> TennisCoach: inside setFortuneService() method")
+    this.fortuneService = fortuneService
+  }
+
   override def getDailyWorkout: String = "Practice your backend volley"
 
   override def getDailyFortune: String = fortuneService.getFortune
