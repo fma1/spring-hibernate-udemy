@@ -6,4 +6,6 @@ import org.springframework.stereotype.Component
 @Component
 class TennisCoach(@Autowired fortuneService: FortuneService) extends Coach {
   override def getDailyWorkout: String = "Practice your backend volley"
+
+  override def getDailyFortune: String = fortuneService.getFortune
 }
