@@ -1,12 +1,14 @@
 package com.luv2code.springdemo
 
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.context.annotation.Scope
 import org.springframework.stereotype.Component
 
 // This annotation auto-generates getters/setters for Spring Beans to Scala's getters/setters
 // import scala.beans.BeanProperty
 
 @Component
+@Scope("prototype")
 class TennisCoach extends Coach {
   println(">> TennisCoach: inside default constructor")
 
