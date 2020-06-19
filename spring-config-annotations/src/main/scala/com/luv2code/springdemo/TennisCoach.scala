@@ -18,13 +18,13 @@ class TennisCoach extends Coach {
 
   @PostConstruct
   def doMyStartupStuff(): Unit = {
-    println(">> TennisCoach: inside df doMyStartupStuff()")
+    println(">> TennisCoach: inside of doMyStartupStuff()")
   }
 
   // Not called for prototype beans
   @PreDestroy
   def doMyCleanupStuff(): Unit = {
-    println(">> TennisCoach: inside df doMyStartupStuff()")
+    println(">> TennisCoach: inside of doMyStartupStuff()")
   }
 
   @Autowired
