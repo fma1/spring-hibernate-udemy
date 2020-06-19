@@ -1,5 +1,6 @@
 package com.luv2code.springdemo
 
+import javax.annotation.{PostConstruct, PreDestroy}
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Scope
 import org.springframework.stereotype.Component
@@ -14,6 +15,17 @@ class TennisCoach extends Coach {
 
   // @BeanProperty
   var fortuneService: FortuneService = _
+
+  @PostConstruct
+  def doMyStartupStuff(): Unit = {
+    println(">> TennisCoach: inside df doMyStartupStuff()")
+  }
+
+  // Not called for prototype beans
+  @PreDestroy
+  def doMyCleanupStuff(): Unit = {
+    println(">> TennisCoach: inside df doMyStartupStuff()")
+  }
 
   @Autowired
   def setFortuneService(fortuneService: FortuneService): Unit = {
