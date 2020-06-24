@@ -4,7 +4,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 
 class MySpringMvcDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
-  override protected def getRootConfigClasses: Array[Class[_]] = _
+  override protected def getRootConfigClasses: Array[Class[_]] = null
 
   override protected def getServletConfigClasses: Array[Class[_]] = Array[Class[_]](classOf[DemoAppConfig])
 

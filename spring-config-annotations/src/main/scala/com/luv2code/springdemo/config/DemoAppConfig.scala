@@ -7,7 +7,6 @@ import org.springframework.web.servlet.ViewResolver
 import org.springframework.web.servlet.config.annotation.EnableWebMvc
 import org.springframework.web.servlet.view.InternalResourceViewResolver
 
-
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = Array("com.luv2code.springdemo"))
@@ -15,7 +14,7 @@ class DemoAppConfig { // define a bean for ViewResolver
   @Bean
   def viewResolver: ViewResolver = {
     val viewResolver = new InternalResourceViewResolver()
-    viewResolver.setPrefix("/WEB-INF/view/")
+    viewResolver.setPrefix("/web/view/")
     viewResolver.setSuffix(".jsp")
     viewResolver
   }
