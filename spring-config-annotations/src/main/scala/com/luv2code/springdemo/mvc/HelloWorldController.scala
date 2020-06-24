@@ -14,8 +14,14 @@ class HelloWorldController {
   def processForm(): String = "helloworld"
 
   @RequestMapping(Array("/processFormVersionTwo"))
-  def letsShoutDude(@RequestParam("studentName") theName: String, model: Model): String = {
-    model.addAttribute("message", s"Yo! ${theName.toUpperCase()}")
+  def letsShoutDude(request: HttpServletRequest, model: Model): String = {
+    model.addAttribute("message", s"Yo! ${request.getParameter("studentName").toUpperCase()}")
+    "helloworld"
+  }
+
+  @RequestMapping(Array("/processFormVersionThree"))
+  def letsShoutDude2(@RequestParam("studentName") theName: String, model: Model): String = {
+    model.addAttribute("message", s"Hey! My friend from v3! ${theName.toUpperCase()}")
     "helloworld"
   }
 }
