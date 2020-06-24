@@ -3,10 +3,8 @@
     <title>Hello World</title>
 </head>
 <body>
-Hello World of Spring!
-
+Hello World of Spring!<br />
 <br />
-<br />
-
-Student name: ${param.studentName}
+Student name: ${param.studentName}<br />
+The message: ${message}
 </body>
