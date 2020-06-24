@@ -3,7 +3,7 @@ package com.luv2code.springdemo.mvc
 import javax.servlet.http.HttpServletRequest
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
-import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.{RequestMapping, RequestParam}
 
 @Controller
 class HelloWorldController {
@@ -14,8 +14,8 @@ class HelloWorldController {
   def processForm(): String = "helloworld"
 
   @RequestMapping(Array("/processFormVersionTwo"))
-  def letsShoutDude(request: HttpServletRequest, model: Model): String = {
-    model.addAttribute("message", s"Yo! ${request.getParameter("studentName").toUpperCase()}")
+  def letsShoutDude(@RequestParam("studentName") theName: String, model: Model): String = {
+    model.addAttribute("message", s"Yo! ${theName.toUpperCase()}")
     "helloworld"
   }
 }
