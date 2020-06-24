@@ -6,6 +6,7 @@ import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.{RequestMapping, RequestParam}
 
 @Controller
+@RequestMapping(Array("/hello"))
 class HelloWorldController {
   @RequestMapping(Array("/showForm"))
   def showForm(): String = "helloworld-form"
