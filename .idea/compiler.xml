@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hibernate-tutorial" />
         <module name="spring-config-annotations" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="hibernate-tutorial" target="1.8" />
       <module name="spring-config-annotations" target="1.8" />
       <module name="spring-hibernate-udemy" target="1.8" />
     </bytecodeTargetLevel>
