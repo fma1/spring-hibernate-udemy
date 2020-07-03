@@ -1,6 +1,6 @@
 package com.luv2code.hibernate.demo.app
 
-import java.util.logging.LogManager
+// import java.util.logging.LogManager
 
 import com.luv2code.hibernate.demo.entity.Student
 import org.hibernate.Session
@@ -11,8 +11,10 @@ import scala.jdk.CollectionConverters._
 class QueryStudentDemo {}
 
 object QueryStudentDemo extends App {
+  /*
   System.setProperty("org.jboss.logging.provider", "jdk")
   LogManager.getLogManager.readConfiguration(classOf[QueryStudentDemo].getResourceAsStream("/logging.properties"))
+   */
 
   val factory = new Configuration()
     .configure("hibernate.cfg.xml")
