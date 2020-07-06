@@ -10,6 +10,7 @@ class InstructorDetail(_youtubeChannel: String, _hobby: String) {
   @Id
   @BeanProperty
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @TableGenerator(name="myTableGen1", initialValue=0)
   @Column(name="id")
   var id: Int = _
 
