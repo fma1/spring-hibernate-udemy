@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="Maven 1" modules="hibernate-tutorial,spring-config-annotations,spring-hibernate-udemy">
+    <profile name="Maven 1" modules="hb-01-one-to-one-uni,hibernate-tutorial,hibernate-tutorial (1),spring-config-annotations,spring-hibernate-udemy">
       <option name="deprecationWarnings" value="true" />
     </profile>
   </component>

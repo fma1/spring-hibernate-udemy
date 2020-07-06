@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hb-01-one-to-one-uni/hb-01-one-to-one-uni.iml" filepath="$PROJECT_DIR$/hb-01-one-to-one-uni/hb-01-one-to-one-uni.iml" />
       <module fileurl="file://$PROJECT_DIR$/hibernate-tutorial/hibernate-tutorial.iml" filepath="$PROJECT_DIR$/hibernate-tutorial/hibernate-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config-annotations/spring-config-annotations.iml" filepath="$PROJECT_DIR$/spring-config-annotations/spring-config-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-hibernate-udemy.iml" filepath="$PROJECT_DIR$/spring-hibernate-udemy.iml" />

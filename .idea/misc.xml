@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/hb-01-one-to-one-uni/pom.xml" />
       </list>
     </option>
   </component>
