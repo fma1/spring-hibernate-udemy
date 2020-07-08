@@ -162,5 +162,6 @@
     <modules>
         <module>spring-config-annotations</module>
         <module>hibernate-tutorial</module>
+        <module>hibernate-demo</module>
     </modules>
 </project>

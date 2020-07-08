@@ -9,10 +9,12 @@
         <module name="hb-01-one-to-one-uni" />
         <module name="hibernate-tutorial" />
         <module name="spring-config-annotations" />
+        <module name="hibernate-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hb-01-one-to-one-uni" target="1.8" />
+      <module name="hibernate-demo" target="1.8" />
       <module name="hibernate-tutorial" target="1.8" />
       <module name="hibernate-tutorial (1)" target="1.8" />
       <module name="spring-config-annotations" target="1.8" />
