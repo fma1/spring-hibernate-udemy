@@ -3,7 +3,7 @@ package com.luv2code.hibernate.demo.app
 import com.luv2code.hibernate.demo.entity.Student
 import org.hibernate.cfg.Configuration
 
-object CreateUserDemo extends App {
+object CreateStudentDemo extends App {
   val factory = new Configuration()
     .configure("hibernate.cfg.xml")
     .addAnnotatedClass(classOf[Student])
