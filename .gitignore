@@ -101,3 +101,6 @@ spring-config-annotations/spring-config-annotations.iml
 spring-hibernate-udemy.iml
 web-customer-tracker/web-customer-tracker.iml
 hb-01-one-to-one-uni/hb-01-one-to-one-uni.iml
+
+.idea/encodings.xml
+.idea/modules.xml
