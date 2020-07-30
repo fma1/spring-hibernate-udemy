@@ -22,6 +22,12 @@ class InstructorDetail(_youtubeChannel: String, _hobby: String) {
   @Column(name="hobby")
   var hobby: String = _hobby
 
+  @BeanProperty
+  @OneToOne(mappedBy = "instructorDetail", cascade = Array(CascadeType.ALL))
+  // Only deletes instructor detail
+  // @OneToOne(mappedBy = "instructorDetail", cascade = Array(CascadeType.DETACH))
+  var instructor: Instructor = _
+
   private def this() = this(null, null)
 
   override def toString = s"InstructorDetail($id, $youtubeChannel, $hobby)"
