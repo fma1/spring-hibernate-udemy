@@ -227,7 +227,10 @@
         <module>spring-config-annotations</module>
         <module>hibernate-tutorial</module>
         <module>hibernate-demo</module>
-        <module>hb-01-one-to-one-uni</module>
+        <module>hb-01-one-to-one-bi</module>
+        <module>hb-03-one-to-many</module>
+        <module>hb-04-one-to-one-uni</module>
+        <module>hb-eager-vs-lazy-demo</module>
         <module>web-customer-tracker</module>
         <module>hibernate-wrapper</module>
     </modules>
