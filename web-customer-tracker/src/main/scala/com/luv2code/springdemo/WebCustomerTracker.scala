@@ -7,13 +7,6 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 object WebCustomerTracker {
   System.setProperty("server.port", "8082")
-  /*
-  System.setProperty("server.jsp-servlet.class-name", "org.apache.jasper.servlet.JspServlet")
-  System.setProperty("server.jsp-servlet.registered", "true")
-  System.setProperty("server.servlet-path", "/")
-  System.setProperty("spring.mvc.view.prefix", "/web/view/")
-  System.setProperty("spring.mvc.view.suffix", ".jsp")
-  */
 
   def main(args: Array[String]): Unit = {
     SpringApplication.run(classOf[WebCustomerTracker], args: _*)
