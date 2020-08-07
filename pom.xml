@@ -17,6 +17,7 @@
         <scala.version>2.13.2</scala.version>
         <spring-framework.version>5.2.7.RELEASE</spring-framework.version>
         <spring-boot.version>2.3.1.RELEASE</spring-boot.version>
+        <tomcat.version>9.0.34</tomcat.version>
     </properties>
 
     <dependencyManagement>
