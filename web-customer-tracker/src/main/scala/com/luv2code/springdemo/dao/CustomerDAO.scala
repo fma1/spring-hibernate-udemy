@@ -28,6 +28,12 @@ class CustomerDAO {
       session.createQuery("from Customer", classOf[Customer]).getResultList
     }
   }
+
+  def saveCustomer(customer: Customer): Unit = {
+    sessionFactoryWrapper.withSession { session =>
+      session.save(customer)
+    }
+  }
 }
 
 object CustomerDAO {

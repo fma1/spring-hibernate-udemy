@@ -1,10 +1,11 @@
 package com.luv2code.springdemo.controller
 
+import com.luv2code.springdemo.entity.Customer
 import com.luv2code.springdemo.service.CustomerService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
-import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.{GetMapping, ModelAttribute, PostMapping}
 
 @Controller
 @GetMapping(Array("customer"))
@@ -16,5 +17,17 @@ class CustomerController {
   def listCustomers(theModel: Model): String = {
     theModel.addAttribute("customers", customerService.getCustomers)
     "list-customers"
+  }
+
+  @GetMapping(Array("/showFormForAdd"))
+  def showFormForAdd(theModel: Model): String = {
+    theModel.addAttribute("customer", new Customer())
+    "customer-form"
+  }
+
+  @PostMapping(Array("/saveCustomer"))
+  def saveCustomer(@ModelAttribute("customer") customer: Customer): String = {
+    customerService.saveCustomer(customer)
+    "redirect:/customer/list"
   }
 }

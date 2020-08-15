@@ -18,5 +18,5 @@ case class Customer(
   @Column(name = "id")
   var id: Int = _
 
-  private def this() = this(null, null, null)
+  def this() = this(null, null, null)
 }

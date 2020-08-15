@@ -17,4 +17,9 @@ class CustomerService {
   def getCustomers: JList[Customer] = {
     customerDAO.getCustomers
   }
+
+  @Transactional
+  def saveCustomer(customer: Customer): Unit = {
+    customerDAO.saveCustomer(customer)
+  }
 }
