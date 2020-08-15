@@ -1,7 +1,7 @@
 package com.luv2code.springdemo.config
 
 import org.springframework.context.annotation.{Bean, ComponentScan, Configuration}
-import org.springframework.web.servlet.config.annotation.{DefaultServletHandlerConfigurer, EnableWebMvc, ResourceHandlerRegistry, ViewResolverRegistry, WebMvcConfigurer, WebMvcConfigurerAdapter}
+import org.springframework.web.servlet.config.annotation.{DefaultServletHandlerConfigurer, EnableWebMvc, ResourceHandlerRegistry, ViewControllerRegistry, ViewResolverRegistry, WebMvcConfigurer, WebMvcConfigurerAdapter}
 import org.springframework.web.servlet.view.InternalResourceViewResolver
 
 @Configuration
@@ -24,5 +24,9 @@ class WebMvcConfig extends WebMvcConfigurer {
     viewResolver.setPrefix("/WEB-INF/view/")
     viewResolver.setSuffix(".jsp")
     viewResolver
+  }
+
+  override def addViewControllers(registry: ViewControllerRegistry): Unit = {
+    registry.addViewController("/").setViewName("index")
   }
 }
