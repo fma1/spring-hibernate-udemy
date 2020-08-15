@@ -1,20 +1,20 @@
 package com.luv2code.springdemo.controller
 
-import com.luv2code.springdemo.dao.CustomerDAO
+import com.luv2code.springdemo.service.CustomerService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
-import org.springframework.web.bind.annotation.{GetMapping, RequestMapping, RestController}
+import org.springframework.web.bind.annotation.GetMapping
 
 @Controller
-@RequestMapping(Array("customer"))
+@GetMapping(Array("customer"))
 class CustomerController {
   @Autowired
-  private var customerDAO: CustomerDAO = _
+  private var customerService: CustomerService = _
 
-  @RequestMapping(Array("/list"))
+  @GetMapping(Array("/list"))
   def listCustomers(theModel: Model): String = {
-    theModel.addAttribute("customers", customerDAO.getCustomers)
+    theModel.addAttribute("customers", customerService.getCustomers)
     "list-customers"
   }
 }
