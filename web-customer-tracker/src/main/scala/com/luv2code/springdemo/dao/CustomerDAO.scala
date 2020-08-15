@@ -25,7 +25,7 @@ class CustomerDAO {
 
   def getCustomers: JList[Customer] = {
     sessionFactoryWrapper.withSession { session =>
-      session.createQuery("from Customer", classOf[Customer]).getResultList
+      session.createQuery("from Customer order by lastName", classOf[Customer]).getResultList
     }
   }
 
