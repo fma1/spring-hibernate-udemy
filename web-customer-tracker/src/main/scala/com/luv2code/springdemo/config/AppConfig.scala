@@ -10,7 +10,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan(basePackages = Array("com.luv2code.springdemo.dao", "com.luv2code.springdemo.entity"))
+@ComponentScan(basePackages = Array(
+  "com.luv2code.springdemo.service",
+  "com.luv2code.springdemo.dao",
+  "com.luv2code.springdemo.entity"))
 class AppConfig {
   @Bean
   def sessionFactory(): LocalSessionFactoryBean = {
