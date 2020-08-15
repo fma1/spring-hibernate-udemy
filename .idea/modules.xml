@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hb-02-one-to-one-bi/hb-02-one-to-one-bi.iml" filepath="$PROJECT_DIR$/hb-02-one-to-one-bi/hb-02-one-to-one-bi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hb-03-one-to-many/hb-03-one-to-many.iml" filepath="$PROJECT_DIR$/hb-03-one-to-many/hb-03-one-to-many.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hb-04-one-to-many-uni/hb-04-one-to-many-uni.iml" filepath="$PROJECT_DIR$/hb-04-one-to-many-uni/hb-04-one-to-many-uni.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hb-05-many-to-many/hb-05-many-to-many.iml" filepath="$PROJECT_DIR$/hb-05-many-to-many/hb-05-many-to-many.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hb-eager-vs-lazy-demo/hb-eager-vs-lazy-demo.iml" filepath="$PROJECT_DIR$/hb-eager-vs-lazy-demo/hb-eager-vs-lazy-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibernate-demo/hibernate-demo.iml" filepath="$PROJECT_DIR$/hibernate-demo/hibernate-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibernate-tutorial/hibernate-tutorial.iml" filepath="$PROJECT_DIR$/hibernate-tutorial/hibernate-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibernate-wrapper/hibernate-wrapper.iml" filepath="$PROJECT_DIR$/hibernate-wrapper/hibernate-wrapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-config-annotations/spring-config-annotations.iml" filepath="$PROJECT_DIR$/spring-config-annotations/spring-config-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-hibernate-udemy.iml" filepath="$PROJECT_DIR$/spring-hibernate-udemy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-customer-tracker/web-customer-tracker.iml" filepath="$PROJECT_DIR$/web-customer-tracker/web-customer-tracker.iml" />
+    </modules>
+  </component>
+</project>
