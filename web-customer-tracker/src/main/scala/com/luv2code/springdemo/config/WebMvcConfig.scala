@@ -13,7 +13,9 @@ class WebMvcConfig extends WebMvcConfigurer {
   }
 
   override def addResourceHandlers(registry: ResourceHandlerRegistry): Unit = {
-    registry.addResourceHandler("/css/**").addResourceLocations("classpath:/css/")
+    registry
+      .addResourceHandler("/static/**")
+      .addResourceLocations("classpath:/static/")
   }
 
   @Bean
