@@ -3,6 +3,7 @@ package com.luv2code.springdemo.config
 import java.util.Properties
 
 import com.mchange.v2.c3p0.ComboPooledDataSource
+import org.hibernatewrapper.SessionFactoryWrapper
 import org.springframework.context.annotation.{Bean, ComponentScan, Configuration}
 import org.springframework.orm.hibernate5.{HibernateTransactionManager, LocalSessionFactoryBean}
 import org.springframework.transaction.PlatformTransactionManager
@@ -42,6 +43,11 @@ class AppConfig {
     val transactionManager = new HibernateTransactionManager
     transactionManager.setSessionFactory(sessionFactory().getObject)
     transactionManager
+  }
+
+  @Bean
+  def sessionFactoryWrapper: SessionFactoryWrapper = {
+    new SessionFactoryWrapper(sessionFactory().getObject)
   }
 
   private def hibernateProperties = {

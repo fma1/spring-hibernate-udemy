@@ -8,11 +8,11 @@
 
 	<link type="text/css"
 		  rel="stylesheet"
-		  href="${pageContext.request.contextPath}/resources/css/style.css">
+		  href="${pageContext.request.contextPath}/static/css/style.css">
 
 	<link type="text/css"
 		  rel="stylesheet"
-		  href="${pageContext.request.contextPath}/resources/css/add-customer-style.css">
+		  href="${pageContext.request.contextPath}/static/css/add-customer-style.css">
 </head>
 
 <body>
@@ -28,6 +28,9 @@
 	
 		<form:form action="saveCustomer" modelAttribute="customer" method="POST">
 		
+            <!-- need to associate this data with customer id -->
+			<form:hidden path="id" />
+
 			<table>
 				<tbody>
 					<tr>
