@@ -232,10 +232,6 @@
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
         </plugins>
     </build>
 
@@ -245,7 +241,7 @@
         <module>hibernate-demo</module>
         <module>hb-02-one-to-one-bi</module>
         <module>hb-03-one-to-many</module>
-        <module>hb-04-one-to-one-uni</module>
+        <module>hb-04-one-to-many-uni</module>
         <module>hb-05-many-to-many</module>
         <module>hb-eager-vs-lazy-demo</module>
         <module>web-customer-tracker</module>

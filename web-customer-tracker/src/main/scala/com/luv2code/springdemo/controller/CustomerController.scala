@@ -19,16 +19,22 @@ class CustomerController {
     "list-customers"
   }
 
-  @GetMapping(Array("/showFormForAdd"))
-  def showFormForAdd(theModel: Model): String = {
-    theModel.addAttribute("customer", new Customer())
-    "customer-form"
-  }
-
   @PostMapping(Array("/saveCustomer"))
   def saveCustomer(@ModelAttribute("customer") customer: Customer): String = {
     customerService.saveCustomer(customer)
     "redirect:/customer/list"
+  }
+
+  @PostMapping(Array("/deleteCustomer"))
+  def deleteCustomer(@RequestParam("customerId") theId: Int, theModel: Model): String = {
+    customerService.deleteCustomerById(theId)
+    "redirect:/customer/list"
+  }
+
+  @GetMapping(Array("/showFormForAdd"))
+  def showFormForAdd(theModel: Model): String = {
+    theModel.addAttribute("customer", new Customer())
+    "customer-form"
   }
 
   @GetMapping(Array("/showFormForUpdate"))

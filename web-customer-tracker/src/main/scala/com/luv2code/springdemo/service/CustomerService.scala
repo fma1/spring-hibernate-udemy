@@ -19,6 +19,11 @@ class CustomerService {
   }
 
   @Transactional
+  def deleteCustomerById(theId: Int): Unit = {
+    customerDAO.deleteCustomerById(theId)
+  }
+
+  @Transactional
   def getCustomers: JList[Customer] = {
     customerDAO.getCustomers
   }

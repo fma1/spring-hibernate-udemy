@@ -19,6 +19,14 @@ class CustomerDAO {
     }
   }
 
+  def deleteCustomerById(theId: Int): Unit = {
+    sessionFactoryWrapper.withTransaction() { session =>
+      session.createQuery("delete from Customer where id=:customerId")
+        .setParameter("customerId", theId)
+        .executeUpdate()
+    }
+  }
+
   def getCustomers: JList[Customer] = {
     sessionFactoryWrapper.withTransaction() { session =>
       session.createQuery("from Customer order by lastName", classOf[Customer]).getResultList
