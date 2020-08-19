@@ -1,5 +1,10 @@
 package com.luv2code.aopdemo.dao
 
-class AccountDAO {
+import org.springframework.stereotype.Component
 
+@Component
+class AccountDAO {
+  def addAccount(): Unit = {
+    println(s"$getClass: DOING MY DB WORK: ADDING AN ACCOUNT")
+  }
 }
