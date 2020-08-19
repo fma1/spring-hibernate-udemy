@@ -15,6 +15,7 @@
         <module name="hb-03-one-to-many" />
         <module name="hb-02-one-to-one-bi" />
         <module name="web-customer-tracker" />
+        <module name="spring-demo-aop" />
         <module name="hb-05-many-to-many" />
       </profile>
     </annotationProcessing>
@@ -28,6 +29,7 @@
       <module name="hibernate-tutorial" target="1.8" />
       <module name="hibernate-wrapper" target="1.8" />
       <module name="spring-config-annotations" target="1.8" />
+      <module name="spring-demo-aop" target="1.8" />
       <module name="spring-hibernate-udemy" target="1.8" />
       <module name="web-customer-tracker" target="1.8" />
     </bytecodeTargetLevel>

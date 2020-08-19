@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/hibernate-tutorial/hibernate-tutorial.iml" filepath="$PROJECT_DIR$/hibernate-tutorial/hibernate-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/hibernate-wrapper/hibernate-wrapper.iml" filepath="$PROJECT_DIR$/hibernate-wrapper/hibernate-wrapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-config-annotations/spring-config-annotations.iml" filepath="$PROJECT_DIR$/spring-config-annotations/spring-config-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-demo-aop/spring-demo-aop.iml" filepath="$PROJECT_DIR$/spring-demo-aop/spring-demo-aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-hibernate-udemy.iml" filepath="$PROJECT_DIR$/spring-hibernate-udemy.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-customer-tracker/web-customer-tracker.iml" filepath="$PROJECT_DIR$/web-customer-tracker/web-customer-tracker.iml" />
     </modules>

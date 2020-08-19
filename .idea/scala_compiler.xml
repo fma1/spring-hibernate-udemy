@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="Maven 1" modules="hb-02-one-to-one-bi,hb-03-one-to-many,hb-04-one-to-many-uni,hb-05-many-to-many,hb-eager-vs-lazy-demo,hibernate-demo,hibernate-tutorial,hibernate-wrapper,spring-config-annotations,spring-hibernate-udemy,web-customer-tracker" />
+    <profile name="Maven 1" modules="hb-02-one-to-one-bi,hb-03-one-to-many,hb-04-one-to-many-uni,hb-05-many-to-many,hb-eager-vs-lazy-demo,hibernate-demo,hibernate-tutorial,hibernate-wrapper,spring-config-annotations,spring-demo-aop,spring-hibernate-udemy,web-customer-tracker" />
   </component>
 </project>
