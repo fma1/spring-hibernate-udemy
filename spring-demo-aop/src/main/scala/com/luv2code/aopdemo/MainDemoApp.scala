@@ -7,7 +7,7 @@ import org.apache.logging.log4j.{LogManager, Logger}
 import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 object MainDemoApp {
-  val logger: Logger = LogManager.getLogger("MainDemoApp")
+  val logger: Logger = LogManager.getLogger(getClass)
 
   def main(args: Array[String]): Unit = {
     val context = new AnnotationConfigApplicationContext(classOf[AppConfig])
@@ -16,6 +16,11 @@ object MainDemoApp {
 
     theAccountDAO.addAccount(Account(null, null))
     theAccountDAO.doWork()
+
+    logger.info("setName()")
+    theAccountDAO.setName("foobar")
+    logger.info("setServiceCode()")
+    theAccountDAO.setServiceCode("silver")
 
     theMembershipDAO.addSillyMember()
     theMembershipDAO.goToSleep()
