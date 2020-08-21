@@ -7,12 +7,12 @@ import org.springframework.stereotype.Component
 
 @Aspect
 @Component
-@Order(2)
-class LoggingAspect {
-  val logger: Logger = LogManager.getLogger(classOf[LoggingAspect])
+@Order(1)
+class CloudLogAsyncAspect {
+  val logger: Logger = LogManager.getLogger(classOf[CloudLogAsyncAspect])
 
   @Before("com.luv2code.aopdemo.aspect.AopExpressions.forDaoPackageNoGetterSetter()")
-  def beforeAddAccountAdvice(): Unit = {
-    logger.info("=====>> Executing @Before advice on addAccount()")
+  def logToCloudAsync(): Unit = {
+    logger.info("=====>> Logging to Cloud in async fashion")
   }
 }

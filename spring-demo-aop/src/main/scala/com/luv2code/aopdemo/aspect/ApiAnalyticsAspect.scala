@@ -7,12 +7,12 @@ import org.springframework.stereotype.Component
 
 @Aspect
 @Component
-@Order(2)
-class LoggingAspect {
-  val logger: Logger = LogManager.getLogger(classOf[LoggingAspect])
+@Order(3)
+class ApiAnalyticsAspect {
+  val logger: Logger = LogManager.getLogger(classOf[ApiAnalyticsAspect])
 
   @Before("com.luv2code.aopdemo.aspect.AopExpressions.forDaoPackageNoGetterSetter()")
-  def beforeAddAccountAdvice(): Unit = {
-    logger.info("=====>> Executing @Before advice on addAccount()")
+  def performApiAnalytics(): Unit = {
+    logger.info("=====>> Performing API Analytics")
   }
 }
