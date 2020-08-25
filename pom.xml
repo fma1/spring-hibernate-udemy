@@ -257,6 +257,7 @@
         <module>hb-05-many-to-many</module>
         <module>hb-eager-vs-lazy-demo</module>
         <module>web-customer-tracker</module>
+        <module>web-customer-tracker-aop</module>
         <module>hibernate-wrapper</module>
         <module>spring-demo-aop</module>
     </modules>
