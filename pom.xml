@@ -260,5 +260,6 @@
         <module>web-customer-tracker-aop</module>
         <module>hibernate-wrapper</module>
         <module>spring-demo-aop</module>
+        <module>ujson-demo</module>
     </modules>
 </project>
