@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-config-annotations/spring-config-annotations.iml" filepath="$PROJECT_DIR$/spring-config-annotations/spring-config-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-demo-aop/spring-demo-aop.iml" filepath="$PROJECT_DIR$/spring-demo-aop/spring-demo-aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-hibernate-udemy.iml" filepath="$PROJECT_DIR$/spring-hibernate-udemy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rest-demo/spring-rest-demo.iml" filepath="$PROJECT_DIR$/spring-rest-demo/spring-rest-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ujson-demo/ujson-demo.iml" filepath="$PROJECT_DIR$/ujson-demo/ujson-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-customer-tracker/web-customer-tracker.iml" filepath="$PROJECT_DIR$/web-customer-tracker/web-customer-tracker.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-customer-tracker-aop/web-customer-tracker-aop.iml" filepath="$PROJECT_DIR$/web-customer-tracker-aop/web-customer-tracker-aop.iml" />
