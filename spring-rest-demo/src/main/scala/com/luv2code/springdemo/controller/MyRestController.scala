@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.rest
+package com.luv2code.springdemo.controller
 
 import javax.servlet.http.HttpServletResponse
 import org.springframework.http.MediaType

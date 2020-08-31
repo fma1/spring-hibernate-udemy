@@ -2,6 +2,12 @@ package com.luv2code.springdemo.config
 
 import java.util.Properties
 
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.databind.module.SimpleModule
+import com.fasterxml.jackson.module.scala.DefaultScalaModule
+import com.luv2code.springdemo.deserializer.StudentDeserializer
+import com.luv2code.springdemo.entity.Student
+import com.luv2code.springdemo.serializer.StudentSerializer
 import com.mchange.v2.c3p0.ComboPooledDataSource
 import org.hibernatewrapper.SessionFactoryWrapper
 import org.springframework.context.annotation.{Bean, ComponentScan, Configuration, EnableAspectJAutoProxy}
@@ -36,6 +42,17 @@ class AppConfig extends WebMvcConfigurer {
     viewResolver.setPrefix("/WEB-INF/view/")
     viewResolver.setSuffix(".jsp")
     viewResolver
+  }
+
+  @Bean
+  def objectMapper: ObjectMapper = {
+    val objectMapper = new ObjectMapper()
+    objectMapper.registerModule(DefaultScalaModule)
+    val studentSerializerModule = new SimpleModule()
+    studentSerializerModule.addSerializer(new StudentSerializer())
+    studentSerializerModule.addDeserializer(classOf[Student], new StudentDeserializer())
+    objectMapper.registerModule(studentSerializerModule)
+    objectMapper
   }
 
   @Bean

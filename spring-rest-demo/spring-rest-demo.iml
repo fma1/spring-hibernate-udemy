@@ -16,6 +16,12 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-paranamer:2.11.2" level="project" />
     <orderEntry type="library" name="Maven: com.thoughtworks.paranamer:paranamer:2.8" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-scala_2.13:2.11.2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.2" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-paranamer:2.11.2" level="project" />
+    <orderEntry type="library" name="Maven: com.thoughtworks.paranamer:paranamer:2.8" level="project" />
     <orderEntry type="module" module-name="hibernate-wrapper" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:2.0.0-alpha1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.13.3" level="project" />
