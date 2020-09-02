@@ -26,16 +26,4 @@ class StudentRestController {
     else
       theStudentsArray(studentId)
   }
-
-  @ExceptionHandler
-  def handleException(exception: StudentNotFoundException): ResponseEntity[StudentErrorResponse] = {
-     new ResponseEntity(
-       StudentErrorResponse(HttpStatus.NOT_FOUND.value(), exception.getMessage, System.currentTimeMillis()), HttpStatus.NOT_FOUND)
-  }
-
-  @ExceptionHandler
-  def handleException(exception: Exception): ResponseEntity[StudentErrorResponse] = {
-    new ResponseEntity(
-      StudentErrorResponse(HttpStatus.BAD_REQUEST.value(), exception.getMessage, System.currentTimeMillis()), HttpStatus.BAD_REQUEST)
-  }
 }
