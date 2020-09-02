@@ -11,6 +11,8 @@ import com.luv2code.springdemo.serializer.StudentSerializer
 import com.mchange.v2.c3p0.ComboPooledDataSource
 import org.hibernatewrapper.SessionFactoryWrapper
 import org.springframework.context.annotation.{Bean, ComponentScan, Configuration, EnableAspectJAutoProxy}
+import org.springframework.http.converter.HttpMessageConverter
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
 import org.springframework.orm.hibernate5.{HibernateTransactionManager, LocalSessionFactoryBean}
 import org.springframework.transaction.PlatformTransactionManager
 import org.springframework.transaction.annotation.EnableTransactionManagement
@@ -22,6 +24,13 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver
 @EnableWebMvc
 @ComponentScan(basePackages = Array("com.luv2code.springdemo.*"))
 class AppConfig extends WebMvcConfigurer {
+  override def configureMessageConverters(converters: java.util.List[HttpMessageConverter[_]]): Unit = {
+    val converter = new MappingJackson2HttpMessageConverter()
+    converter.setObjectMapper(objectMapper)
+    converters.add(converter.asInstanceOf[HttpMessageConverter[_]])
+    super.configureMessageConverters(converters)
+  }
+
   override def configureDefaultServletHandling(configurer: DefaultServletHandlerConfigurer): Unit = {
     configurer.enable()
   }
@@ -59,7 +68,7 @@ class AppConfig extends WebMvcConfigurer {
   def sessionFactory(): LocalSessionFactoryBean = {
     val sessionFactory = new LocalSessionFactoryBean
     sessionFactory.setDataSource(myDataSource())
-    sessionFactory.setPackagesToScan("com.luv2code.springdemo.entity");
+    sessionFactory.setPackagesToScan("com.luv2code.springdemo.entity")
     sessionFactory.setHibernateProperties(hibernateProperties)
     sessionFactory
   }
